@@ -47,6 +47,6 @@ rl.on('close', () => {
 
     const rankingStrings = rankingArray.map(([key, value]) => {
       return key + ': ' + value.popu10 + '=>' + value.popu15 + ' 変化率:' + value.change;
-    });
+    });//各要素対して、return以降の処理を施した値をArrayにして返す。
     console.log(rankingStrings);
 });
